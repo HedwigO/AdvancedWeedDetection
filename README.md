@@ -56,5 +56,10 @@ Average Pooling Layer
 Fully Connected Layers  
 Output Layers  
 
+# Hyperparameter Tuning
+After training the models, we found that the ResNet50 performed the best with an accuracy of around 96%.  We conducted hyperparameter tuning using 3 different methods for optimizing this model:
+Grid Search  
+Random Search  
+Bayesian Search  
 
 

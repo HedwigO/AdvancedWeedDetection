@@ -4,7 +4,7 @@ This project aims to improve model performance (accuracy and loss) especially un
 
 It is going to compare the performance of several baseline models, select the model with best performance, and try different hyperparameter tuning methods on the selected model to find the optimized combination of hyperparameters.
 
-## Data Source
+# Data Source
 
 The dataset used in this project consists of 1,040 images and a labels.csv indicating whether the image is labled as weed or crop. However, notice that there is a mismatch between the number of images and the number of labels, so we will need to drop those unlabled images.
 
@@ -12,25 +12,33 @@ The images are stored in the train_images directory, and the labels are provided
 
 - [Weed Dataset]([http://images.cocodataset.org/zips/train2014.zip](https://github.com/wittyicon29/WeedWatch-Weed-Detection-using-CNN/tree/main/Dataset)) provided by `@wittyicon29` on GitHub
 
-## Preprocessing
+# Preprocessing
 
  All of the images are resized to a fixed size of 224x224 pixels and converted to an array format. The cv2 library is used for reading and preprocessing the images. By standardizing the images, they are formatted suitably to be inputted into the CNN model.
 
- ## Model Architecture
+# Model Architecture
 
- # 3-Layer CNN
+## 3-Layer CNN
+
 Input Layer
+
 Convolutional Layer
+
 Pooling Layer
+
 Convolution Layer
+
 Pooling Layer
+
 Flatten Layer
+
 Fully Connected Layer
+
 Output Layer
 
- # Resnet50
+## Resnet50
 
- # InceptionV3
+## InceptionV3
 
  # InceptionResNetV2
 

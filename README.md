@@ -89,6 +89,9 @@ Fully Connected Layers
 Output Layer  
 <img width="405" alt="image" src="https://github.com/HedwigO/AdvancedWeedDetection/assets/169214308/8805b809-ceff-4a43-b813-6bcc9c2482e9">
 
+## Baseline and Augmented Models Test Results
+<img width="912" alt="image" src="https://github.com/HedwigO/AdvancedWeedDetection/assets/169214308/3008ae7f-9819-4b5c-8211-d4418643599b">
+
 # Hyperparameter Tuning
 After training the models, we found that the ResNet50 performed the best with an accuracy of around 96%.  We conducted hyperparameter tuning using 3 different methods for optimizing this model
 

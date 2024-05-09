@@ -60,13 +60,12 @@ The performance of each model was evaluated based on test accuracy and test loss
 <img width="968" alt="3 Layer CNN_architecture" src="https://github.com/HedwigO/AdvancedWeedDetection/assets/97476561/4bfbf06f-070f-42ca-96c8-95cb9ca954c0">
 
 ## ResNet50  
-Input Layer  
-Initial Convolutional Layer (7x7)  
-Max Pooling Layer (3x3, stride of 2)  
-Residual Blocks x16 (Input, 1x1, 3x3 filters, Batch Norm, ReLU activations, Output)  
-Average Pooling Layer  
-Fully Connected Layers  
-Output Layer  
+- Input Layer: Takes input of shape `input_shape`.
+- ResNet50 Base Model: Pre-trained on ImageNet, does not include the top layer, configured to not train its weights (many layers here).
+- Flatten Layer: Flattens the output from ResNet50.
+- Dense Layer: 64 units, ReLU activation.
+- Output Dense Layer: `num_classes units`, softmax activation.
+<img width="722" alt="Screen Shot 2024-05-08 at 11 23 09 PM" src="https://github.com/HedwigO/AdvancedWeedDetection/assets/97476561/664520ac-13c2-45c7-98d4-698ae4382f05">
 
 ## InceptionV3  
 Input Layer  

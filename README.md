@@ -12,13 +12,13 @@ The images are stored in the train_images directory, and the labels are provided
 # Preprocessing  
 All of the images are resized to a fixed size of 224x224 pixels and converted to an array format. The cv2 library is used for reading and preprocessing the images. By standardizing the images, they are formatted suitably to be inputted into the CNN model.
 
-# Models  
+# Model Training (architecture)  
 We trained 4 different models:  
 3-Layer CNN  
-ResNet50InceptionV3   
+ResNet50  
+InceptionV3  
 InceptionResNetV2  
 
-# Model Architecture  
 ## 3-Layer CNN  
 Input Layer  
 Convolutional Layer (with activation function)  

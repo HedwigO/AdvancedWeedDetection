@@ -14,15 +14,15 @@ The images are stored in the train_images directory, and the labels are provided
 
 - [Weed Dataset]([http://images.cocodataset.org/zips/train2014.zip](https://github.com/wittyicon29/WeedWatch-Weed-Detection-using-CNN/tree/main/Dataset)) provided by `@wittyicon29` on GitHub
 
-# Preprocessing  
-All of the images are resized to a fixed size of 224x224 pixels and converted to an array format. The cv2 library is used for reading and preprocessing the images. By standardizing the images, they are formatted suitably to be inputted into the CNN model.
-
 # Model Training (architecture)  
+The original data set was divided into a training set, validation set, and a test set. There are 2 versions of the training set. One is the original data set and the other is an augmented data set.  
 We trained 4 different models:  
 3-Layer CNN  
 ResNet50  
 InceptionV3  
-InceptionResNetV2  
+InceptionResNetV2 
+
+The performance of each model was evaluated based on test accuracy and test loss. 
 
 ## 3-Layer CNN  
 Input Layer  

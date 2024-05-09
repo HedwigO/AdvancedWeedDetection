@@ -99,3 +99,15 @@ Random Search: randomly samples hyperparameter combinations to explore a wider r
 Bayesian Search: adapts to previous evaluation results to identify the next hyperparameter and determine the optimal hyperparameter configuration  
 
 
+# Results  
+The performance metrics we used are still test accuracy and test loss. Random Search had the best overall performance of the 3 hyperparameter tuning methods. There was a 2.14% increase in testing accuracy and a 78.10% decrease in test loss. The other 2 hyperparameter methods both improved in one performance metric but exhibited poorer performance in the other. Grid Search resulted in a slight increase in test accuracy but also a big increase in testing loss. Bayesian Search had a large decrease in test loss but also a decrease in test accuracy.
+
+![results_of_hyperparameter_tuning](https://github.com/HedwigO/AdvancedWeedDetection/assets/102783801/52085ccc-b03c-4147-9aa8-13d2ed265173)
+
+The hyperparameters for the best trial Random Search for the ResNet50 model were:
+* Dense Units: 96
+* Activation Function: sigmoid
+* Learning Rate: 1.378e-05
+* Dropout: 0.0
+
+

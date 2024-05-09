@@ -1,6 +1,11 @@
 # Advanced Weed Detection using CNN under Challenging Weather Conditions  
-This project aims to improve model performance (accuracy and loss) especially under special weather conditions using CNN architectures and hyperparameter tuning.  
-It is going to compare the performance of several baseline models, select the model with best performance, and try different hyperparameter tuning methods on the selected model to find the optimized combination of hyperparameters.
+
+# Overview
+This project focuses on enhancing the robustness of weed detection models by improving the accuracy of Convolutional Neural Networks (CNNs) in challenging weather conditions. Traditional weed detection models, typically trained on images captured under normal weather conditions, often struggle to maintain accuracy when analyzing images taken in adverse weather such as rain, snow, or varying lighting conditions. Our primary objective is to bolster model resilience across diverse weather scenarios by enabling them to learn and adapt to real-world weather patterns.
+
+To achieve this goal, we employ data augmentation techniques to simulate challenging weather conditions. By generating augmented images, we expand the diversity of the training dataset. This augmented dataset, combined with the original images, forms the basis for training CNN models aimed at enhancing robustness.
+
+The benefits of our project are far-reaching. By facilitating more accurate decision-making, we can mitigate the occurrence of False Positives (misclassifying crops as weeds) and False Negatives (failing to detect weeds), both of which have significant consequences for agriculture. Reduced instances of False Positives minimize food wastage resulting from the unnecessary elimination of crops, while fewer False Negatives help prevent extensive crop damage caused by undetected weeds. Ultimately, our project aims to contribute to a more efficient and sustainable agricultural ecosystem.
 
 # Data Source  
 The dataset used in this project consists of 1,040 images and a labels.csv indicating whether the image is labled as weed or crop. However, notice that there is a mismatch between the number of images and the number of labels, so we will need to drop those unlabled images.

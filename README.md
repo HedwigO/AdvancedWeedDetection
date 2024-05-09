@@ -8,7 +8,7 @@ To achieve this goal, we employ data augmentation techniques to simulate challen
 The benefits of our project are far-reaching. By facilitating more accurate decision-making, we can mitigate the occurrence of False Positives (misclassifying crops as weeds) and False Negatives (failing to detect weeds), both of which have significant consequences for agriculture. Reduced instances of False Positives minimize food wastage resulting from the unnecessary elimination of crops, while fewer False Negatives help prevent extensive crop damage caused by undetected weeds. Ultimately, our project aims to contribute to a more efficient and sustainable agricultural ecosystem.
 
 # Data Source  
-The dataset used in this project consists of 1,040 images and a labels.csv indicating whether the image is labled as weed or non-weed. However, notice that there is a mismatch between the number of images and the number of labels, so we will need to drop those unlabled images.
+The dataset used in this project consists of 1,040 images and a labels.csv indicating whether the image is labled as weed or non-weed. However, there is a mismatch between the number of images and the number of labels, so the unlabeled images were removed to ensure accurate data preprocessing.
 
 The images are stored in the train_images directory, and the labels are provided in the labels.csv file. Many thanks to the data source from: 
 

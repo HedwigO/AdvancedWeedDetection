@@ -35,26 +35,29 @@ Where we can adjust the parameters to generate images with different levels of w
 
 We applied data augumentation to 50% of the original dataset where 25% of them are rain and 25% of them are snow.
 
-# Model Training (architecture)  
+# Model Training (Model Architecture)  
 The original data set was divided into a training set, validation set, and a test set. There are 2 versions of the training set. One is the original data set and the other is an augmented data set.  
 
 We trained 4 different models:  
-3-Layer CNN  
-ResNet50  
-InceptionV3  
-InceptionResNetV2 
+- 3-Layer CNN  
+- ResNet50  
+- InceptionV3  
+- InceptionResNetV2 
 
-The performance of each model was evaluated based on test accuracy and test loss. 
+The performance of each model was evaluated based on test accuracy and test loss. Here are the architectures of the models:
 
 ## 3-Layer CNN  
-Input Layer  
-Convolutional Layer (with activation function)  
-Pooling Layer  
-Convolution Layer (with activation function)    
-Pooling Layer  
-Flatten Layer  
-Fully Connected Layer  
-Output Layer  
+- Input Layer: Takes input of shape `input_shape`.
+- Conv2D Layer: 128 filters, 3x3 kernel size, ReLU activation.
+- MaxPooling2D Layer: 2x2 pool size.
+- Conv2D Layer: 64 filters, 3x3 kernel size, ReLU activation.
+- MaxPooling2D Layer: 2x2 pool size.
+- Conv2D Layer: 32 filters, 3x3 kernel size, ReLU activation.
+- MaxPooling2D Layer: 2x2 pool size.
+- Flatten Layer: Flattens the input.
+- Dense Layer: 64 units, ReLU activation.
+- Dense Layer: `num_classes units`, softmax activation.
+<img width="968" alt="3 Layer CNN_architecture" src="https://github.com/HedwigO/AdvancedWeedDetection/assets/97476561/4bfbf06f-070f-42ca-96c8-95cb9ca954c0">
 
 ## ResNet50  
 Input Layer  

@@ -68,24 +68,24 @@ The performance of each model was evaluated based on test accuracy and test loss
 <img width="722" alt="Screen Shot 2024-05-08 at 11 23 09 PM" src="https://github.com/HedwigO/AdvancedWeedDetection/assets/97476561/664520ac-13c2-45c7-98d4-698ae4382f05">
 
 ## InceptionV3  
-Input Layer  
+Input Layer: Takes input of shape `input_shape`.    
 Stem (Convolutional, Batch Norm, ReLU activations)  
-Inception Modules x11 (1x1, 3x3, 5x5 filters, Max Pooling, Concatenation)  
+Inception Modules x11: Many layers of 1x1, 3x3, 5x5 filters, Max Pooling, Concatenation.    
 Auxiliary Classifiers (Optional)  
-Average Pooling Layer  
+Average Pooling Layer: Condenses the output from the Inception Modules.    
 Fully Connected Layers  
-Output Layer  
+- Output Dense Layer: `num_classes units`, softmax activation.
 <img width="996" alt="image" src="https://github.com/HedwigO/AdvancedWeedDetection/assets/169214308/10466a19-bbe7-488f-a84b-16e6e1ac73be">
 
 
 ## InceptionResNetV2
-Input Layer  
+Input Layer: Takes input of shape `input_shape`.    
 Stem (Convolutional, Batch Norm, ReLU activations)  
-Inception-ResNet Blocks x10 (1x1, 3x3, 7x1, 1x7 filters, Max Pooling, Concatenation, Residuals, Activation Functions, Output)  
-Reduction Blocks  
-Average Pooling Layer  
+Inception-ResNet Blocks x10: Many layers of 1x1, 3x3, 7x1, 1x7 filters, Max Pooling, Concatenation, Residuals, Activation Functions, Output.   
+Reduction Blocks: Reduces the spatial dimensions of the output from the Inception-ResNet Blocks.  
+Average Pooling Layer: Condenses the output from the Reduction Blocks.  
 Fully Connected Layers  
-Output Layer  
+- Output Dense Layer: `num_classes units`, softmax activation.
 <img width="405" alt="image" src="https://github.com/HedwigO/AdvancedWeedDetection/assets/169214308/8805b809-ceff-4a43-b813-6bcc9c2482e9">
 
 ## Baseline and Augmented Models Test Results

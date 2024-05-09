@@ -90,6 +90,7 @@ Output Layer
 
 ## Baseline and Augmented Models Test Results
 <img width="912" alt="image" src="https://github.com/HedwigO/AdvancedWeedDetection/assets/169214308/3008ae7f-9819-4b5c-8211-d4418643599b">
+According to the results, the accuracy of the augmented models generally exceeds that of their baseline counterparts, which were trained without data augmentation. Specifically, ResNet-50 provides the highest test accuracy, with augmented accuracy reaching 0.96345 compared to a baseline accuracy of 0.91374. The augmented versions of the InceptionV3 models demonstrate noticeable accuracy improvements, rising from 0.57164 to 0.86550. In contrast, the 3-Layer CNN model and the Inception-ResNet-V2 model did not benefit from data augmentation, with their accuracy slightly drops or maintain unchanged. These results indicate that simulating rainy and snowy weather conditions through data augmentation generally enhances model robustness and allows them to capture more variations, leading to improved performance.
 
 # Hyperparameter Tuning
 After training the models, we found that the ResNet50 performed the best with an accuracy of around 96%.  We conducted hyperparameter tuning using 3 different methods for optimizing this model
@@ -99,7 +100,7 @@ Random Search: randomly samples hyperparameter combinations to explore a wider r
 Bayesian Search: adapts to previous evaluation results to identify the next hyperparameter and determine the optimal hyperparameter configuration  
 
 
-# Results  
+# Hyperparameter Optimization Results  
 The performance metrics we used are still test accuracy and test loss. Random Search had the best overall performance of the 3 hyperparameter tuning methods. There was a 2.14% increase in testing accuracy and a 78.10% decrease in test loss. The other 2 hyperparameter methods both improved in one performance metric but exhibited poorer performance in the other. Grid Search resulted in a slight increase in test accuracy but also a big increase in testing loss. Bayesian Search had a large decrease in test loss but also a decrease in test accuracy.
 
 ![results_of_hyperparameter_tuning](https://github.com/HedwigO/AdvancedWeedDetection/assets/102783801/52085ccc-b03c-4147-9aa8-13d2ed265173)

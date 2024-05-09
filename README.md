@@ -21,7 +21,7 @@ The dataset used in this project consists of 1,040 images and a labels.csv indic
 
 The images are stored in the train_images directory, and the labels are provided in the labels.csv file. Many thanks to the data source from: 
 
-[Weed and Non-weed Image Dataset](http://images.cocodataset.org/zips/train2014.zip](https://github.com/wittyicon29/WeedWatch-Weed-Detection-using-CNN/tree/main/Dataset) provided by `@wittyicon29` on GitHub
+[Weed and Non-weed Image Dataset](https://github.com/wittyicon29/WeedWatch-Weed-Detection-using-CNN) provided by `@wittyicon29` on GitHub
 
 # Data Preprocessing  
 All of the images are resized to a fixed size of 224x224 pixels and converted to an array format. The cv2 library is used for reading and preprocessing the images. By standardizing the images, they are formatted suitably to be inputted into the CNN model.

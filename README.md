@@ -69,7 +69,7 @@ The performance of each model was evaluated based on test accuracy and test loss
 
 ## InceptionV3  
 - Input Layer: Takes input of shape `input_shape`.    
-- Stem: Convolutional, Batch Norm, ReLU activations.  
+- Stem: Initial Convolutional Layers, Batch Norm, ReLU activations.  
 - Inception Modules x11: Many layers of 1x1, 3x3, 5x5 filters, Max Pooling, Concatenation.    
 - Auxiliary Classifiers (Optional)  
 - Average Pooling Layer: Condenses the output from the Inception Modules.    
@@ -80,7 +80,7 @@ The performance of each model was evaluated based on test accuracy and test loss
 
 ## InceptionResNetV2
 - Input Layer: Takes input of shape `input_shape`.    
-- Stem (Convolutional, Batch Norm, ReLU activations)  
+- Stem: Initial Convolutional Layers, Batch Norm, ReLU activations.  
 - Inception-ResNet Blocks x10: Many layers of 1x1, 3x3, 7x1, 1x7 filters, Max Pooling, Concatenation, Residuals, Activation Functions, Output.   
 - Reduction Blocks: Reduces the spatial dimensions of the output from the Inception-ResNet Blocks.  
 - Average Pooling Layer: Condenses the output from the Reduction Blocks.  

@@ -76,6 +76,8 @@ Auxiliary Classifiers (Optional)
 Average Pooling Layer  
 Fully Connected Layers  
 Output Layer  
+<img width="996" alt="image" src="https://github.com/HedwigO/AdvancedWeedDetection/assets/169214308/10466a19-bbe7-488f-a84b-16e6e1ac73be">
+
 
 ## InceptionResNetV2
 Input Layer  

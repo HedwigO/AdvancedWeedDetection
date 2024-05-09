@@ -7,6 +7,15 @@ To achieve this goal, we employ data augmentation techniques to simulate challen
 
 The benefits of our project are far-reaching. By facilitating more accurate decision-making, we can mitigate the occurrence of False Positives (misclassifying crops as weeds) and False Negatives (failing to detect weeds), both of which have significant consequences for agriculture. Reduced instances of False Positives minimize food wastage resulting from the unnecessary elimination of crops, while fewer False Negatives help prevent extensive crop damage caused by undetected weeds. Ultimately, our project aims to contribute to a more efficient and sustainable agricultural ecosystem.
 
+# How to Run the Model
+All datasets and code needed for this project are all included in this github repository. After downloading the trained_data and labels.csv from Datasets folder, you can put them in the your local or drive. When running the code, please modify the path to read the image directionary similar to something like this:
+
+```bash
+/content/drive/My Drive/your path to the folder
+```
+
+Please run the code in this order: Preprocessing --> Training_baseline --> Training_hyperparmetertuning. By running these Jupyter notebook cell by cell, you can instantiate the dataset, model, evaluation and everything needed for the project. Notice if you only want to see the best model, you can just pick Training_baseline/Baseline_Model_ResNet50.ipynb and Training_hyperparamtertuning/Resnet50_RandomSearch.ipynb to run.
+
 # Data Source  
 The dataset used in this project consists of 1,040 images and a labels.csv indicating whether the image is labled as weed or non-weed. However, there is a mismatch between the number of images and the number of labels, so the unlabeled images were removed to ensure accurate data preprocessing.
 

@@ -112,4 +112,20 @@ The hyperparameters for the best trial Random Search for the ResNet50 model were
 * Learning Rate: 1.378e-05
 * Dropout: 0.0
 
+# Conclusion & Future Work
+In conclusion, we found the ResNet50 model applied with Random Search tuning gives the best percenateg improvement in test accuracy and test loss, so it is the optimized model to identify weed under specical weather conditions. Our model has some advantages, but it also has limitations that need improvements. Here are our discussion:
 
+## 1. Limited Data Variety
+Our dataset predominantly focused on weather-related variations, such as changes due to rain or snow. While effective at simulating specific environmental impacts, this limited scope may not adequately represent other critical factors like different weed species (this will need multi-class classification), locations (what about weeds in greenhouse rather than in fields), or less common weather conditions.
+
+To build a more robust model, we need to either find more labeled image data. Possible direction can be exploring local agriculture database or try some API with weather features. If such datasets are not available, then we might need to think of creating synthetic datasets. However, GAN can be challenging for image data, so we need to find better way to expand data.
+
+## 2. Overfitting Risks
+Despite high validation accuracies, there is a potential risk of overfitting, as indicated by the discrepancy between training and validation performance in some trials.
+
+To improvement overfitting, we need to apply advanced regularization techniques such as dropout or L2 regularization more consistently across models. Additionally, we should apply early stopping during the training so that it can stop when the model performance consistently flatten, preventing the model from learning noise in the training data.
+
+## 3. Bias from Data Augmentation
+The reliance on augmented data might introduce biases, where the model learns features specific to the synthetic augmentations rather than real-world variations.
+
+To adjust such bias, we can employ more sophisticated augmentation techniques that closely mimic real-world variations. Also, expanding the range of augmentation parameters to include different types of noise, distortions, and lighting conditions could reduce the model's dependency on specific features introduced by current augmentation methods.

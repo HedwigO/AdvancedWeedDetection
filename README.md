@@ -54,7 +54,7 @@ Inception-ResNet Blocks x10 (1x1, 3x3, 7x1, 1x7 filters, Max Pooling, Concatenat
 Reduction Blocks  
 Average Pooling Layer  
 Fully Connected Layers  
-Output Layers  
+Output Layer  
 
 # Hyperparameter Tuning
 After training the models, we found that the ResNet50 performed the best with an accuracy of around 96%.  We conducted hyperparameter tuning using 3 different methods for optimizing this model:  

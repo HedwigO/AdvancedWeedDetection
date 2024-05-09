@@ -16,6 +16,7 @@ The images are stored in the train_images directory, and the labels are provided
 
 # Model Training (architecture)  
 The original data set was divided into a training set, validation set, and a test set. There are 2 versions of the training set. One is the original data set and the other is an augmented data set.  
+
 We trained 4 different models:  
 3-Layer CNN  
 ResNet50  
@@ -62,7 +63,8 @@ Fully Connected Layers
 Output Layer  
 
 # Hyperparameter Tuning
-After training the models, we found that the ResNet50 performed the best with an accuracy of around 96%.  We conducted hyperparameter tuning using 3 different methods for optimizing this model:  
+After training the models, we found that the ResNet50 performed the best with an accuracy of around 96%.  We conducted hyperparameter tuning using 3 different methods for optimizing this model
+
 Grid Search: explores all specified hyperparameter combinations  
 Random Search: randomly samples hyperparameter combinations to explore a wider range  
 Bayesian Search: adapts to previous evaluation results to identify the next hyperparameter and determine the optimal hyperparameter configuration  

@@ -63,8 +63,8 @@ Output Layer
 
 # Hyperparameter Tuning
 After training the models, we found that the ResNet50 performed the best with an accuracy of around 96%.  We conducted hyperparameter tuning using 3 different methods for optimizing this model:  
-Grid Search  
-Random Search  
-Bayesian Search  
+Grid Search: explores all specified hyperparameter combinations  
+Random Search: randomly samples hyperparameter combinations to explore a wider range  
+Bayesian Search: adapts to previous evaluation results to identify the next hyperparameter and determine the optimal hyperparameter configuration  
 
 

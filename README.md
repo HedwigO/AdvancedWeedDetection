@@ -87,6 +87,7 @@ Reduction Blocks
 Average Pooling Layer  
 Fully Connected Layers  
 Output Layer  
+<img width="405" alt="image" src="https://github.com/HedwigO/AdvancedWeedDetection/assets/169214308/8805b809-ceff-4a43-b813-6bcc9c2482e9">
 
 # Hyperparameter Tuning
 After training the models, we found that the ResNet50 performed the best with an accuracy of around 96%.  We conducted hyperparameter tuning using 3 different methods for optimizing this model
